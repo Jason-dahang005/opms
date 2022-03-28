@@ -7,6 +7,7 @@ use App\Http\Livewire\Customer\Home;
 use App\Http\Livewire\Customer\Shop;
 use App\Http\Livewire\Customer\AboutUs;
 use App\Http\Livewire\Customer\ContactUs;
+use App\Http\Livewire\Customer\ProductDetail;
 
 // ADMIN LIVEWIRE
 use App\Http\Livewire\Admin\Dashboard;
@@ -31,9 +32,10 @@ use App\Http\Livewire\Admin\UserComponent;
 */
 
 Route::get('/', Home::class)->name('customer.home');
-Route::get('customer/about-us', AboutUS::class)->name('customer.about-us');
-Route::get('customer/shop', Shop::class)->name('customer.shop');
-Route::get('customer/contact-us', Shop::class)->name('customer.contact-us');
+Route::get('/customer/about-us', AboutUS::class)->name('customer.about-us');
+Route::get('/customer/shop', Shop::class)->name('customer.shop');
+Route::get('/customer/contact-us', Shop::class)->name('customer.contact-us');
+Route::get('/customer/product-detail/{id}', ProductDetail::class)->name('customer.product-detail');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

@@ -178,36 +178,37 @@
                                 aria-labelledby="nav-grid-tab">
                                 <div class="row">
                                     @foreach ($prod as $p)
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <!-- Start Single Product -->
-                                                <div class="single-product">
-                                                    <div class="product-image">
-                                                        <img src="{{ asset('/images/images') }}/{{ $p->image }}" alt="#" width="335px" height="335px">
-                                                        <div class="button">
-                                                            <a href="product-details.html" class="btn"><i
-                                                                    class="lni lni-cart"></i> Add to Cart</a>
+                                        @if ($p->status)
+                                            <div class="col-lg-4 col-md-6 col-12">
+                                                <!-- Start Single Product -->
+                                                    <div class="single-product">
+                                                        <div class="product-image">
+                                                            <img src="{{ asset('/images/images') }}/{{ $p->image }}" alt="#" style="max-height: 335px; max-width: 335px">
+                                                            <div class="button">
+                                                                <a href="{{ url('customer/product-detail/'.$p->id) }}" class="btn"><i class="lni lni-cart"></i> Add to Cart</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <span class="category">{{ $p->category->name }}</span>
+                                                            <h4 class="title">
+                                                                <a href="product-grids.html">{{ $p->name }}</a>
+                                                            </h4>
+                                                            <ul class="review">
+                                                                <li><i class="lni lni-star-filled"></i></li>
+                                                                <li><i class="lni lni-star-filled"></i></li>
+                                                                <li><i class="lni lni-star-filled"></i></li>
+                                                                <li><i class="lni lni-star-filled"></i></li>
+                                                                <li><i class="lni lni-star"></i></li>
+                                                                <li><span>4.0 Review(s)</span></li>
+                                                            </ul>
+                                                            <div class="price">
+                                                                <span>₱{{ $p->price }}</span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="product-info">
-                                                        <span class="category">{{ $p->category->name }}</span>
-                                                        <h4 class="title">
-                                                            <a href="product-grids.html">{{ $p->name }}</a>
-                                                        </h4>
-                                                        <ul class="review">
-                                                            <li><i class="lni lni-star-filled"></i></li>
-                                                            <li><i class="lni lni-star-filled"></i></li>
-                                                            <li><i class="lni lni-star-filled"></i></li>
-                                                            <li><i class="lni lni-star-filled"></i></li>
-                                                            <li><i class="lni lni-star"></i></li>
-                                                            <li><span>4.0 Review(s)</span></li>
-                                                        </ul>
-                                                        <div class="price">
-                                                            <span>₱{{ $p->price }}</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <!-- End Single Product -->
-                                        </div>
+                                                <!-- End Single Product -->
+                                            </div>    
+                                        @endif
                                     @endforeach
                                 </div>
                                 <div class="row">

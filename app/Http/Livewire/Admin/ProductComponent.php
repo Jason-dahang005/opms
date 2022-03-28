@@ -8,6 +8,7 @@ use App\Models\ProductCategory;
 use Livewire\WithFileUploads;
 use Carbon\Carbon;
 use Livewire\WithPagination;
+use Illuminate\Support\Str;
 
 class ProductComponent extends Component
 {
