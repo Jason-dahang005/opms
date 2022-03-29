@@ -113,12 +113,17 @@
                   </div>
                   <div class="navbar-cart">
                     <div class="wishlist">
-                      <a href="javascript:void(0)">
-                        <i class="lni lni-heart"></i>
-                        <span class="total-items">0</span>
-                      </a>
-                    </div>
                     
+                      <a href="javascript:void(0)">
+                      
+                        <i class="lni lni-heart"></i>
+                        @auth
+                        <span class="total-items">0</span>
+                        @endauth 
+                      </a>
+                      
+                    </div>
+                     
                     <div class="cart-items">
                       <a href="
                             @guest
@@ -126,7 +131,9 @@
                             @endguest
                         " class="main-btn">
                         <i class="lni lni-cart"></i>
+                        @auth
                         <span class="total-items"></span>
+                        @endauth
                       </a>
                       <!-- Shopping Item -->
                       @auth
@@ -201,7 +208,7 @@
                             <li><a href="">Wishlist</a></li>
                             <li><a href="">Followed Stores</a></li>
                             {{-- <li><a href="{{ route('logout') }}">Logout</a></li> --}}
-                            <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" >Logout</a></li>
+                            <li><a href="{{ route('logout') }}"  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                               @csrf
                             </form>
