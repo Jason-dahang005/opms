@@ -66,5 +66,6 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function(){
     Route::get('/admin/goldfish-component', GoldfishComponent::class)->name('admin.goldfish-component');
     Route::get('/admin/sales-component', SalesComponent::class)->name('admin.sales-component');
     Route::get('/admin/inventory-component', InventoryComponent::class)->name('admin.inventory-component');
+    Route::get('/admin/reservation-component', ReservationComponent::class)->name('admin.reservation-component');
 
 });

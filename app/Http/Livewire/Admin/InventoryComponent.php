@@ -4,7 +4,7 @@ namespace App\Http\Livewire\Admin;
 
 use Livewire\Component;
 
-class Inventory extends Component
+class InventoryComponent extends Component
 {
     public function render()
     {

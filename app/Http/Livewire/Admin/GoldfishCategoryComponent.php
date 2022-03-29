@@ -4,7 +4,7 @@ namespace App\Http\Livewire\Admin;
 
 use Livewire\Component;
 
-class GoldfishCategory extends Component
+class GoldfishCategoryComponent extends Component
 {
     public function render()
     {
