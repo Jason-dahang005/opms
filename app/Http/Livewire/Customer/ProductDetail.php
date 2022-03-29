@@ -10,10 +10,15 @@ use Cart;
 
 class ProductDetail extends Component
 {
+    public $slug;
+
+    public function mount($slug){
+        $this->slug = $slug;
+    }
 
     public function render()
     {
-        $prod = Product::all();
+        $prod = Product::where('slug', $this->slug)->first();
         return view('livewire.customer.product-detail', ['prod' => $prod])->layout('layouts.customer');
     }
 

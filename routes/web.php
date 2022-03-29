@@ -35,7 +35,7 @@ Route::get('/', Home::class)->name('customer.home');
 Route::get('/customer/about-us', AboutUS::class)->name('customer.about-us');
 Route::get('/customer/shop', Shop::class)->name('customer.shop');
 Route::get('/customer/contact-us', Shop::class)->name('customer.contact-us');
-Route::get('/customer/product-detail/{id}', ProductDetail::class)->name('customer.product-detail');
+Route::get('/customer/product-detail/{slug}', ProductDetail::class)->name('customer.product-detail');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

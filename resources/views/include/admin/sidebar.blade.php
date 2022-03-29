@@ -29,64 +29,73 @@
             <p>Dashboard</p>
           </a>
         </li>
+
         <li class="nav-item">
           <a href="{{ url('/admin/user-component') }}" class="nav-link {{  request()->routeIs('admin.user-component') ? 'active' : '' }}">
             <i class="nav-icon fas fa-users"></i>
             <p>User</p>
           </a>
         </li>
+
         <li class="nav-item">
           <a href="{{ url('/admin/delivery-component') }}" class="nav-link {{  request()->routeIs('admin.delivery-component') ? 'active' : '' }}">
             <i class="nav-icon fas fa-motorcycle"></i>
             <p>Delivery</p>
           </a>
         </li>
+
         <li class="nav-item">
           <a href="{{ url('/admin/product-category-component') }}" class="nav-link {{  request()->routeIs('admin.product-category-component') ? 'active' : '' }}">
             <i class="nav-icon fas fa-boxes"></i>
             <p>Product Category</p>
           </a>
         </li>
+
         <li class="nav-item">
           <a href="{{ url('/admin/product-component') }}" class="nav-link {{  request()->routeIs('admin.product-component') ? 'active' : '' }}">
             <i class="nav-icon fas fa-shopping-bag"></i>
             <p>Product</p>
           </a>
         </li>
+
         <li class="nav-item">
-          <a href="{{ url('/admin/product-category') }}" class="nav-link">
-            <i class="nav-icon fas fa-boxes"></i>
-            <p>Product Category</p>
+          <a href="{{ url('/admin/pet-category') }}" class="nav-link {{ 'admin/pet-category' == request()->path() ? 'active' : '' }}">
+            <i class="nav-icon fas fa-sitemap"></i>
+            <p>Goldfish Categories</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="{{ url('/admin/goldfish') }}" class="nav-link {{ 'admin/goldfish' == request()->path() ? 'active' : '' }}">
+            <i class="nav-icon fas fa-fish"></i>
+            <p>Goldfish</p>
+          </a>
+        </li>
+        
+        <li class="nav-item">
+        <a href="{{ url('/admin/reservations') }}" class="nav-link {{ 'admin/reservations' == request()->path() ? 'active' : '' }}">
+            <i class="nav-icon fas fa-clipboard"></i>
+            <p>Reservations</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="{{ url('/admin/product-category') }}" class="nav-link">
-            <i class="nav-icon fas fa-boxes"></i>
-            <p>Product Category</p>
+        <a href="{{ url('/admin/orders') }}" class="nav-link {{ 'admin/orders' == request()->path() ? 'active' : '' }}">
+            <i class="nav-icon fas fa-shopping-cart"></i>
+            <p>Orders</p>
           </a>
         </li>
+
         <li class="nav-item">
-          <a href="{{ url('/admin/product-category') }}" class="nav-link">
-            <i class="nav-icon fas fa-boxes"></i>
-            <p>Product Category</p>
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-money-bill"></i>
+            <p>Sales</p>
           </a>
         </li>
+
         <li class="nav-item">
-          <a href="{{ url('/admin/product-category') }}" class="nav-link">
-            <i class="nav-icon fas fa-boxes"></i>
-            <p>Product Category</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="{{ url('/admin/product-category') }}" class="nav-link">
-            <i class="nav-icon fas fa-boxes"></i>
-            <p>Product Category</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="{{ url('/admin/product-category') }}" class="nav-link">
-            <i class="nav-icon fas fa-boxes"></i>
-            <p>Product Category</p>
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-box"></i>
+            <p>Inventory</p>
           </a>
         </li>
         <li class="nav-item">

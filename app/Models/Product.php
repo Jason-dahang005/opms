@@ -27,6 +27,7 @@ class Product extends Model
         : static::query()->where('name', 'like', '%'.$search.'%')
         ->orWhere('description', 'like', '%'.$search.'%')
         ->orWhere('status', 'like', '%'.$search.'%')
+        ->orWhere('product_category_id', 'like', '%'.$search.'%')
         ->orWhere('price', 'like', '%'.$search.'%')
         ->orWhere('stock', 'like', '%'.$search.'%')
         ->orWhere('created_at', 'like', '%'.$search.'%');

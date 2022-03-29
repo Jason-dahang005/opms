@@ -1,5 +1,4 @@
 <div>
-    @foreach ($prod as $p)
         <!-- Start Item Details -->
     <section class="item-details section">
         <div class="container">
@@ -9,7 +8,7 @@
 									<div class="product-images">
 										<main id="gallery">
 											<div class="main-img">
-												<img src="{{ asset('/images/images') }}/{{ $p->image }}" id="current" alt="#" style="max-width: 1000px; max-height: 670px">
+												<img src="{{ asset('/images/images') }}/{{ $prod->image }}" id="current" alt="#" style="max-width: 1000px; max-height: 670px">
 											</div>
 											{{-- <div class="images">
 												<img src="https://via.placeholder.com/1000x670" class="img" alt="#">
@@ -23,10 +22,10 @@
 								</div>
 								<div class="col-lg-6 col-md-12 col-12">
 									<div class="product-info">
-										<h2 class="title">{{ $p->name }}</h2>
-										<p class="category"><i class="lni lni-tag"></i>{{ $p->category->name }}</a></p>
-										<h3 class="price">₱{{ $p->price }}</h3>
-										<p class="info-text">{{ $p->description }}</p>
+										<h2 class="title">{{ $prod->name }}</h2>
+										<p class="category"><i class="lni lni-tag"></i>{{ $prod->category->name }}</a></p>
+										<h3 class="price">₱{{ $prod->price }}</h3>
+										<p class="info-text">{{ $prod->description }}</p>
 										<div class="bottom-content">
 											<div class="row align-items-end">
 												<div class="col-lg-4 col-md-4 col-12">
@@ -176,5 +175,4 @@
         </div>
     </section>
     <!-- End Item Details -->
-    @endforeach
 </div>
