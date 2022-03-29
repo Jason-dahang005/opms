@@ -19,10 +19,10 @@ use App\Http\Livewire\Admin\ProductCategoryComponent;
 use App\Http\Livewire\Admin\ProductComponent;
 use App\Http\Livewire\Admin\ReservationComponent;
 use App\Http\Livewire\Admin\UserComponent;
-use App\Http\Livewire\Admin\GoldfishCategory;
-use App\Http\Livewire\Admin\Goldfish;
-use App\Http\Livewire\Admin\Sales;
-use App\Http\Livewire\Admin\Inventory;
+use App\Http\Livewire\Admin\GoldfishCategoryComponent;
+use App\Http\Livewire\Admin\GoldfishComponent;
+use App\Http\Livewire\Admin\SalesComponent;
+use App\Http\Livewire\Admin\InventoryComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,9 +62,9 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function(){
     Route::get('/admin/product-category-component', ProductCategoryComponent::class)->name('admin.product-category-component');
     Route::get('/admin/product-component', ProductComponent::class)->name('admin.product-component');
     Route::get('/admin/user-component', UserComponent::class)->name('admin.user-component');
-    Route::get('/admin/goldfish-category', GoldfishCategory::class)->name('admin.goldfish-Category');
-    Route::get('/admin/goldfish', Goldfish::class)->name('admin.goldfish');
-    Route::get('/admin/sales', Sales::class)->name('admin.sales');
-    Route::get('/admin/inventory', Inventory::class)->name('admin.inventory');
+    Route::get('/admin/goldfish-category-component', GoldfishCategoryComponent::class)->name('admin.goldfish-category-component');
+    Route::get('/admin/goldfish-component', GoldfishComponent::class)->name('admin.goldfish-component');
+    Route::get('/admin/sales-component', SalesComponent::class)->name('admin.sales-component');
+    Route::get('/admin/inventory-component', InventoryComponent::class)->name('admin.inventory-component');
 
 });
