@@ -8,6 +8,6 @@ class Goldfish extends Component
 {
     public function render()
     {
-        return view('livewire.admin.goldfish')->layout('layouts.admin');
+        return view('livewire.admin.goldfish-component')->layout('layouts.admin');
     }
 }
