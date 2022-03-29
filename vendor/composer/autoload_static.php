@@ -153,6 +153,7 @@ class ComposerStaticInit2570dde92e8cb41724404c892d6121a1
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
             'GrahamCampbell\\ResultType\\' => 26,
+            'Gloudemans\\Shoppingcart\\' => 24,
         ),
         'F' => 
         array (
@@ -503,6 +504,10 @@ class ComposerStaticInit2570dde92e8cb41724404c892d6121a1
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
         ),
+        'Gloudemans\\Shoppingcart\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hardevine/shoppingcart/src',
+        ),
         'Fruitcake\\Cors\\' => 
         array (
             0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
@@ -625,7 +630,11 @@ class ComposerStaticInit2570dde92e8cb41724404c892d6121a1
         'App\\Http\\Livewire\\Admin\\ProductComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/Admin/ProductComponent.php',
         'App\\Http\\Livewire\\Admin\\ReservationComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/Admin/ReservationComponent.php',
         'App\\Http\\Livewire\\Admin\\UserComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/Admin/UserComponent.php',
+        'App\\Http\\Livewire\\Customer\\AboutUs' => __DIR__ . '/../..' . '/app/Http/Livewire/Customer/AboutUs.php',
+        'App\\Http\\Livewire\\Customer\\ContactUs' => __DIR__ . '/../..' . '/app/Http/Livewire/Customer/ContactUs.php',
         'App\\Http\\Livewire\\Customer\\Home' => __DIR__ . '/../..' . '/app/Http/Livewire/Customer/Home.php',
+        'App\\Http\\Livewire\\Customer\\ProductDetail' => __DIR__ . '/../..' . '/app/Http/Livewire/Customer/ProductDetail.php',
+        'App\\Http\\Livewire\\Customer\\Shop' => __DIR__ . '/../..' . '/app/Http/Livewire/Customer/Shop.php',
         'App\\Http\\Livewire\\Delivery\\Dashboard' => __DIR__ . '/../..' . '/app/Http/Livewire/Delivery/Dashboard.php',
         'App\\Http\\Middleware\\AuthAdmin' => __DIR__ . '/../..' . '/app/Http/Middleware/AuthAdmin.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -1539,6 +1548,16 @@ class ComposerStaticInit2570dde92e8cb41724404c892d6121a1
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/ValidGenerator.php',
         'Fruitcake\\Cors\\CorsService' => __DIR__ . '/..' . '/fruitcake/php-cors/src/CorsService.php',
         'Fruitcake\\Cors\\Exceptions\\InvalidOptionException' => __DIR__ . '/..' . '/fruitcake/php-cors/src/Exceptions/InvalidOptionException.php',
+        'Gloudemans\\Shoppingcart\\CanBeBought' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/CanBeBought.php',
+        'Gloudemans\\Shoppingcart\\Cart' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Cart.php',
+        'Gloudemans\\Shoppingcart\\CartItem' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/CartItem.php',
+        'Gloudemans\\Shoppingcart\\CartItemOptions' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/CartItemOptions.php',
+        'Gloudemans\\Shoppingcart\\Contracts\\Buyable' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Contracts/Buyable.php',
+        'Gloudemans\\Shoppingcart\\Exceptions\\CartAlreadyStoredException' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Exceptions/CartAlreadyStoredException.php',
+        'Gloudemans\\Shoppingcart\\Exceptions\\InvalidRowIDException' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Exceptions/InvalidRowIDException.php',
+        'Gloudemans\\Shoppingcart\\Exceptions\\UnknownModelException' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Exceptions/UnknownModelException.php',
+        'Gloudemans\\Shoppingcart\\Facades\\Cart' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Facades/Cart.php',
+        'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/ShoppingcartServiceProvider.php',
         'GrahamCampbell\\ResultType\\Error' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Error.php',
         'GrahamCampbell\\ResultType\\Result' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Result.php',
         'GrahamCampbell\\ResultType\\Success' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Success.php',

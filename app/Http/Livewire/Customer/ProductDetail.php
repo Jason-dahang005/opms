@@ -6,6 +6,7 @@ use Livewire\Component;
 
 use App\Models\Product;
 use App\Models\ProductCategory;
+use Cart;
 
 class ProductDetail extends Component
 {
@@ -14,5 +15,10 @@ class ProductDetail extends Component
     {
         $prod = Product::all();
         return view('livewire.customer.product-detail', ['prod' => $prod])->layout('layouts.customer');
+    }
+
+    public function addToCart($prod_id, $prod_name, $prod_price){
+        Cart::add($prod_id, $prod_name, 1, $prod_price)->associate('App\Models\Product');
+        session()->flash('success', 'Item Successfully Added To Cart');
     }
 }
